@@ -1,31 +1,45 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
+
 <body>
     <header>
         <nav>
             <ul class="menu">
-                <a href="/"><li>HOME</li></a>
-                <a href="#band"><li>BAND</li></a>
-                <a href="#tour"><li>TOUR</li></a>
-                <a href="#contact"><li>CONTACT</li></a>
-                <a href=""><li>MORE</li></a>
-                
-                
-                
+                <a href="/">
+                    <li>HOME</li>
+                </a>
+                <a href="#band">
+                    <li>BAND</li>
+                </a>
+                <a href="#tour">
+                    <li>TOUR</li>
+                </a>
+                <a href="#contact">
+                    <li>CONTACT</li>
+                </a>
+                <a href="">
+                    <li>MORE</li>
+                </a>
+
+
+
             </ul>
             <form action="" method="post">
                 <input type="text" name="search">
-                <button type="submit">"bouton</button>
+                <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
             </form>
-            <div><i class="fa-solid fa-bars"></i></div>
+            <div id="burger"><i class="fa-solid fa-bars"></i></div>
 
         </nav>
         <div id="image">
@@ -33,6 +47,107 @@
             <p>We had the best time playing at Venice Beach</p>
         </div>
     </header>
-    
+    <main>
+        <section id="band">
+            <h1>THE BAND</h1>
+            <p>We love music</p>
+            <p id="textBand">Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse quis soluta adipisci natus
+                quibusdam doloremque voluptas aut aliquid? Qui delectus ipsum dolorem ipsam sit doloribus dolores illo
+                quos consectetur in?</p>
+            <div id="bendermember">
+                <figure>
+                    <figcaption>Name</figcaption>
+                    <img src="./assets/img/bandmember.jpg" alt="bandmember">
+                </figure>
+                <figure>
+                    <figcaption>Name</figcaption>
+                    <img src="./assets/img/bandmember.jpg" alt="bandmember">
+                </figure>
+                <figure>
+                    <figcaption>Name</figcaption>
+                    <img src="./assets/img/bandmember.jpg" alt="bandmember">
+                </figure>
+            </div>
+        </section>
+        <section id="tourDatesSection">
+            <div id="tourDates">
+                <h2>TOUR DATES</h2>
+                <p id="text">Remember to book your tikets</p>
+                <div id="calendrier">
+                    <div class="mois">
+                        <span>September</span>
+                        <span id="soldOut">Sold out</span>
+                    </div>
+                    <div class="mois">
+                        <span>October</span>
+                        <span id="soldOut">Sold out</span>
+                    </div>
+                    <div class="mois2">
+                        <span>November</span>
+                        <span id="place">3</span>
+                    </div>
+                </div>
+                <div id="card">
+
+                    <img src="./assets/img/newyork.jpg" alt="">
+
+                    <h3>New York</h3>
+                    <p id="date">Fr1 27 Nov 2016</p>
+                    <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.
+
+                    </p>
+                    <button> Buy Tickets</button>
+
+                </div>
+
+                <div id="card">
+
+                    <img src="./assets/img/paris.jpg" alt="">
+
+                    <h3>Paris</h3>
+                    <p id="date">sat 28 Nov 2016</p>
+                    <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.
+
+                    </p>
+                    <button> Buy Tickets</button>
+
+                </div>
+
+                <div id="card">
+
+                    <img src="./assets/img/sanfran.jpg" alt="">
+
+                    <h3>san francisco</h3>
+                    <p id="date">sun 29 Nov 2016</p>
+                    <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.
+
+                    </p>
+                    <button> Buy Tickets</button>
+
+                </div>
+            </div>
+        </section>
+        <section id="contact">
+            <h2>CONTACT</h2>
+            <p id="txtC">Fan? Drop a note!</p>
+
+            <p class="coor"><i class="fa-solid fa-location-dot"></i>Chicago, US</p>
+            <p class="coor"><i class="fa-solid fa-phone"></i>Phone: +00 15 15 15</p>
+            <p class="coor"><i class="fa-solid fa-envelope"></i> mail@mail.com"</p> 
+
+           <form action="" method="post">
+               <input type="text" placeholder="name">
+               <input type="text" placeholder="Email">
+               <input type="text" placeholder="Message">
+               <input  id="buttonF" type="button" value="SEND">
+           </form>
+
+
+
+        </section>
+
+    </main>
+
 </body>
+
 </html>

@@ -3,51 +3,205 @@
     src: url(../font/Lato-Regular.ttf);
 }
 
-* { 
+* {
     margin: 0;
     padding: 0;
     font-family: lato, sans-serif;
 
 }
- /* header */
- header nav a,header form{
-     display: none;
-     text-decoration: none;
-     color: white;
 
- }
+/* header */
+header nav a,
+header form {
+    display: none;
+    text-decoration: none;
+    color: white;
 
- header nav a:first-child{
-     display: block;
- }
+}
 
- 
- header nav {
-     display: flex;
-     justify-content: space-between;
-     align-items: center;
-     list-style: none;
-     
-     color: white;
-     background-color: black;
- }
+header nav a {
+    padding: .5rem;
+}
 
-#image{
-    background-image:url(../img/la.jpg);
+header nav a:first-child {
+    display: block;
+}
+
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+
+    color: white;
+    background-color: black;
+}
+
+header nav a:hover {
+    background-color: gray;
+}
+
+header nav a:visited {
+    background-color: gray;
+}
+
+
+#image {
+    background-image: url(../img/la.jpg);
     background-position: center;
     background-repeat: no-repeat;
-    background-size:cover;
+    background-size: cover;
 
     height: 25vh;
     display: flex;
     flex-direction: column;
 
     align-items: center;
-    justify-content:flex-end;
+    justify-content: flex-end;
     color: white;
 }
 
-#image p{
+#image p {
     display: none;
 }
+
+#burger {
+    padding: 0.5rem;
+}
+
+#bendermember {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+#bendermember figure {
+    padding: 1rem;
+}
+
+#textBand {
+    text-align: justify;
+    padding: 0.9rem;
+}
+
+#band {
+    text-align: center;
+}
+
+#band h1 {
+    padding: 1rem 0;
+
+}
+
+/* section tour date */
+
+#tourDates{
+    background-color: black;
+    padding: 3rem;
+    color: white;
+
+
+}
+
+.mois,.mois2{
+    background-color: white;
+    color: black;
+}
+
+#tourDates h2 , #text{
+    text-align: center;
+    padding: 0.5rem;
+
+}
+
+#calendrier{
+    padding: 3rem 0;
+}
+
+.mois,.mois2{
+    padding:1rem, 1rem;
+    margin: .1rem;
+    display: flex;
+    
+}
+.mois2{
+    justify-content: space-between;
+}
+    
+#soldOut{
+    background-color: red;
+    padding: 0 
+}
+#place{
+    background-color: black;
+    color: white;
+    height: 1.5rem;
+    width: 1.5rem;
+
+    border-radius:50%;
+    text-align: center;
+}
+
+#tourDatesSection img{
+
+    width: 100%;
+}
+
+#card{
+    background-color: white;
+    color: black;
+    margin-top: 1rem;
+}
+
+#card h3, #date,#card p{
+    padding: 1rem;
+    font-size: 0.8rem;
+
+}
+#card button{
+    margin: 1rem;
+    padding: 1rem;
+    color: white;
+    background-color: black;
+
+}
+
+#card button:hover{
+    background-color: grey;
+}
+
+/* contact */
+
+#contact h2{
+    padding: 2rem;
+    text-align: center;
+
+}
+
+#txtC{
+    padding: 1rem;
+    text-align: center;
+}
+
+.coor{
+    padding: 0;
+    text-align: start;
+}
+
+#contact form{
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+#buttonF{
+    background-color: black;
+    color: white;
+    padding: 1rem;
+    width: 33.33%;
+    
+
+}
+
 
