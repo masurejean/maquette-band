@@ -194,14 +194,47 @@ header nav a:visited {
     padding: 1rem;
     display: flex;
     flex-direction: column;
+    
 }
 #buttonF{
     background-color: black;
     color: white;
     padding: 1rem;
     width: 33.33%;
-    
+}
+
+#contact form div{
+    display: flex;
+    flex-direction: row-reverse;
+    padding: 0.5rem 0;
+}
+
+#map{
+    width: 100%;
 
 }
+
+#map img{
+    width: 100%;
+
+}
+
+/* footer */
+footer{
+    padding: 1rem;
+}
+footer p{
+    padding: 1rem;
+    color: gray;
+    font-size: 1rem;
+    text-align: center;
+
+}
+
+footer a{
+    text-decoration: none;
+    color: gray;
+}
+    
 
 
