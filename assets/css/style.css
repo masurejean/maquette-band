@@ -136,7 +136,7 @@ header nav a:visited {
 
 #soldOut {
     background-color: red;
-    margin: 0  .5rem;
+    margin: 0 .5rem;
 }
 
 #place {
@@ -193,30 +193,23 @@ header nav a:visited {
     text-align: center;
 }
 
-.coor {
-    padding: 0 0.5rem;
-    text-align: start;
-}
 
-#contact form {
-    padding: 1rem;
+
+/* #contact form {
+    
     display: flex;
     flex-direction: column;
 
-}
+} */
 
 #buttonF {
     background-color: black;
     color: white;
     padding: 1rem;
-    width: 33.33%;
+    /* width: 33.33%; */
 }
 
-#contact form div {
-    display: flex;
-    flex-direction: row-reverse;
-    padding: 0.5rem 0;
-}
+
 
 #map {
     width: 100%;
@@ -246,7 +239,7 @@ footer a {
     color: gray;
 }
 
-@media screen and (min-width: 568px) {
+@media screen and (min-width: 576px) {
 
     header nav a,
     header form {
@@ -267,6 +260,38 @@ footer a {
 
     nav input {
         background-color: black;
+        border: none;
+    }
+
+    nav button {
+        padding-right: 0.3rem;
+        color: white;
+        background-color: black;
+
+    }
+
+    #image {
+        display: flex;
+        height: 70vh;
+    }
+
+    #image p {
+        display: flex;
+        justify-content: center;
+    }
+
+    #image p:first-child {
+        padding: 1rem;
+        font-size: 1.25rem;
+        font-weight: 100;
+
+    }
+
+    #image p:last-child {
+        padding-bottom: 1.5rem;
+        font-style: italic;
+
+
     }
 
     #bendermember {
@@ -285,15 +310,68 @@ footer a {
     #calendrier {
         padding: 3rem 5rem;
     }
-    #placess{
+
+    #placess {
         display: flex;
         justify-content: space-evenly;
     }
-    #contact{
+
+    #contact {
         padding: 0 10rem;
     }
-    #calendrier{
+
+    #calendrier {
         padding: 0 8.5rem;
     }
+
+    #card {
+        margin: 1rem .5rem;
+    }
+
+    #globalForm {
+        display: flex;
+        
+    }
     
+    #coor,
+    #formContact {
+
+        width: 50%;
+    }
+    #contact form div input{
+        width: 100%;
+    }
+    #contact form div{
+        margin: 0.05rem ;
+    }
+
+    #contact form {
+        padding: 0;
+        display: flex;
+        /* flex-direction: row; */
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    #contact form div:nth-child(1),
+    #contact form div:nth-child(2) {
+        width: 48.5%;
+        padding: 0;
+    }
+
+    #contact form div:nth-child(3) {
+        width: 100%;
+        padding: 0;
+    }
+
+    #contact form div:nth-child(4) {
+        margin-left: auto;
+        padding: 0;
+    }
+    #map{
+        margin-top: 1rem;
+    }
+
+
+
 }
