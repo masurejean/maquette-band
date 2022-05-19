@@ -97,7 +97,7 @@ header nav a:visited {
 
 /* section tour date */
 
-#tourDates{
+#tourDates {
     background-color: black;
     padding: 3rem;
     color: white;
@@ -105,62 +105,70 @@ header nav a:visited {
 
 }
 
-.mois,.mois2{
+.mois,
+.mois2 {
     background-color: white;
     color: black;
 }
 
-#tourDates h2 , #text{
+#tourDates h2,
+#text {
     text-align: center;
     padding: 0.5rem;
 
 }
 
-#calendrier{
+#calendrier {
     padding: 3rem 0;
 }
 
-.mois,.mois2{
-    padding:1rem, 1rem;
+.mois,
+.mois2 {
+    padding: 1rem, 1rem;
     margin: .1rem;
     display: flex;
-    
+
 }
-.mois2{
+
+.mois2 {
     justify-content: space-between;
 }
-    
-#soldOut{
+
+#soldOut {
     background-color: red;
-    padding: 0 
+    margin: 0  .5rem;
 }
-#place{
+
+#place {
     background-color: black;
     color: white;
     height: 1.5rem;
     width: 1.5rem;
 
-    border-radius:50%;
+    border-radius: 50%;
     text-align: center;
 }
 
-#tourDatesSection img{
+#tourDatesSection img {
 
     width: 100%;
 }
 
-#card{
+#card {
     background-color: white;
     color: black;
     margin-top: 1rem;
 }
 
-#card h3, #date,#card p{
+#card h3,
+#date,
+#card p {
     padding: 1rem;
     font-size: 0.8rem;
 
 }
-#card button{
+
+#card button {
     margin: 1rem;
     padding: 1rem;
     color: white;
@@ -168,62 +176,64 @@ header nav a:visited {
 
 }
 
-#card button:hover{
+#card button:hover {
     background-color: grey;
 }
 
 /* contact */
 
-#contact h2{
+#contact h2 {
     padding: 2rem;
     text-align: center;
 
 }
 
-#txtC{
+#txtC {
     padding: 1rem;
     text-align: center;
 }
 
-.coor{
-    padding: 0;
+.coor {
+    padding: 0 0.5rem;
     text-align: start;
 }
 
-#contact form{
+#contact form {
     padding: 1rem;
     display: flex;
     flex-direction: column;
-    
+
 }
-#buttonF{
+
+#buttonF {
     background-color: black;
     color: white;
     padding: 1rem;
     width: 33.33%;
 }
 
-#contact form div{
+#contact form div {
     display: flex;
     flex-direction: row-reverse;
     padding: 0.5rem 0;
 }
 
-#map{
+#map {
     width: 100%;
 
 }
 
-#map img{
+#map img {
     width: 100%;
 
 }
 
 /* footer */
-footer{
+footer {
     padding: 1rem;
 }
-footer p{
+
+footer p {
     padding: 1rem;
     color: gray;
     font-size: 1rem;
@@ -231,10 +241,59 @@ footer p{
 
 }
 
-footer a{
+footer a {
     text-decoration: none;
     color: gray;
 }
+
+@media screen and (min-width: 568px) {
+
+    header nav a,
+    header form {
+        display: flex;
+
+
+    }
+
+    header ul {
+        display: flex;
+        list-style: none;
+    }
+
+
+    #burger {
+        display: none;
+    }
+
+    nav input {
+        background-color: black;
+    }
+
+    #bendermember {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    .mois,
+    .mois2 {
+        padding: 1rem, 6rem;
+        margin: .1rem;
+        display: flex;
+    }
+
+    #calendrier {
+        padding: 3rem 5rem;
+    }
+    #placess{
+        display: flex;
+        justify-content: space-evenly;
+    }
+    #contact{
+        padding: 0 10rem;
+    }
+    #calendrier{
+        padding: 0 8.5rem;
+    }
     
-
-
+}
