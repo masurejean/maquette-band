@@ -27,6 +27,33 @@ header nav a:first-child {
     display: block;
 }
 
+#moreBtn{
+    position: relative;
+    display: flex;
+    padding:8px;
+    
+}
+
+#subMenu{
+    position: absolute;
+    background-color: white;
+    
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    top: 2.7rem;
+    
+}
+.hide{
+    height: 0;
+    
+}
+
+#subMenu li{
+    color:black;
+
+}
+
 
 header nav {
     display: flex;

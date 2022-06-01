@@ -10,6 +10,7 @@
         integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./assets/css/style.css">
+    <script src="./assets/js/script.js" defer></script>
 </head>
 
 <body>
@@ -28,9 +29,22 @@
                 <a href="#contact">
                     <li>CONTACT</li>
                 </a>
-                <a href="">
-                    <li>MORE</li>
-                </a>
+
+                <li class="hide" id="moreBtn">
+                    MORE <i class="fa-solid fa-caret-right"></i>
+                    <ul id="subMenu" class="hide">
+                        <a href="">
+                            <li>merchandis</li>
+                        </a>
+                        <a href="">
+                            <li>Extra</li>
+                        </a>
+                        <a href="">
+                            <li>Media</li>
+                        </a>
+                    </ul>
+                </li>
+
 
 
 
@@ -138,7 +152,7 @@
                     <p><i class="fa-solid fa-phone"></i> Phone: +00 15 15 15</p>
                     <p><i class="fa-solid fa-envelope"></i> mail@mail.com"</p>
                 </div>
-                <form id=formContact action="" method="post" >
+                <form id=formContact action="" method="post">
                     <div>
                         <input type="text" placeholder="name">
                     </div>
@@ -147,7 +161,7 @@
                     </div>
                     <div>
                         <input type="text" placeholder="Message">
-                    </div >
+                    </div>
                     <div>
                         <input id="buttonF" type="button" value="SEND">
                     </div>
